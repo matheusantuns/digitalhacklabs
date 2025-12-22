@@ -117,7 +117,7 @@ const Contato = () => {
                 </div>
                 
                 <button 
-                  onClick={() => window.open('https://wa.me/5511999999999?text=Preenchi%20o%20formulário%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20estratégica.', '_blank')}
+                  onClick={() => window.open('https://wa.me/5511976877867?text=Preenchi%20o%20formulário%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20estratégica.', '_blank')}
                   className="w-full accent-bg py-3 sm:py-4 rounded-lg sm:rounded-xl font-bold text-sm sm:text-base lg:text-lg hover:opacity-90 transition-opacity"
                 >
                   AGENDAR CONSULTA ESTRATÉGICA
