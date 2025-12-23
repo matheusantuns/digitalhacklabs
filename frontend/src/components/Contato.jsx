@@ -2,28 +2,28 @@ import React from 'react'
 
 const Contato = () => {
   return (
-    <section id="contato" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-slate-800/30">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contato" className="relative min-h-screen flex items-center pt-16 sm:pt-20">
+      {/* Gradiente Sobreposto - EXATAMENTE IGUAL À HERO */}
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-900/30 via-slate-900/70 to-slate-900"></div>
+      
+      {/* TODO O RESTO DO CÓDIGO PERMANECE EXATAMENTE IGUAL */}
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12 sm:py-16 md:py-20 lg:py-24">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
-            {/* Informações Responsivas */}
+            {/* Informações Responsivas - REMOVIDO "Inicie uma conversa" */}
             <div className="px-2 sm:px-0">
-              <div className="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-slate-800/50 mb-4 sm:mb-6">
-                <span className="text-xs sm:text-sm font-medium tracking-widest">INICIE UMA CONVERSA</span>
-              </div>
-              
               <h2 className="heading-font text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8">
                 Vamos Transformar Seu
                 <span className="block gradient-text mt-1 sm:mt-2">Negócio Juntos</span>
               </h2>
               
               <p className="text-sm sm:text-base md:text-lg text-slate-400 mb-8 sm:mb-12">
-                Agende uma consulta estratégica gratuita. Nossos especialistas
+                Agende uma consulta estratégica. Nossos especialistas
                 analisarão seu negócio e apresentarão um plano personalizado
                 para escalar seus resultados.
               </p>
               
-              {/* Diferenciais do Atendimento Responsivos */}
+              {/* Diferenciais do Atendimento Responsivos - REMOVIDO "Resposta em 2h" */}
               <div className="space-y-4 sm:space-y-6">
                 <div className="flex items-start space-x-3 sm:space-x-4">
                   <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-emerald-900/30 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -32,20 +32,8 @@ const Contato = () => {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-bold mb-1 text-sm sm:text-base">Consulta Estratégica Gratuita</h4>
-                    <p className="text-slate-400 text-xs sm:text-sm">30 minutos de análise especializada do seu negócio.</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-3 sm:space-x-4">
-                  <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-blue-900/30 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg className="w-3 h-3 sm:w-4 sm:h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="font-bold mb-1 text-sm sm:text-base">Resposta em até 2 horas</h4>
-                    <p className="text-slate-400 text-xs sm:text-sm">Nosso time responde todas as consultas rapidamente.</p>
+                    <h4 className="font-bold mb-1 text-sm sm:text-base">Consulta Estratégica</h4>
+                    <p className="text-slate-400 text-xs sm:text-sm">Análise especializada do seu negócio.</p>
                   </div>
                 </div>
                 
@@ -131,6 +119,14 @@ const Contato = () => {
           </div>
         </div>
       </div>
+
+      {/* Estilo do Background - IGUAL AO DA HERO */}
+      <style jsx>{`
+        section {
+          background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.8) 100%);
+          position: relative;
+        }
+      `}</style>
     </section>
   )
 }

@@ -2,8 +2,12 @@ import React from 'react'
 
 const Sobre = () => {
   return (
-    <section id="sobre" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-slate-900">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="sobre" className="relative min-h-screen flex items-center pt-16 sm:pt-20">
+      {/* Gradiente Sobreposto - EXATAMENTE IGUAL À HERO */}
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-900/30 via-slate-900/70 to-slate-900"></div>
+      
+      {/* TODO O RESTO DO CÓDIGO PERMANECE EXATAMENTE IGUAL */}
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12 sm:py-16 md:py-20 lg:py-24">
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           <div className="px-2 sm:px-0">
             <div className="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-slate-800/50 mb-4 sm:mb-6">
@@ -70,6 +74,14 @@ const Sobre = () => {
           </div>
         </div>
       </div>
+
+      {/* Estilo do Background - IGUAL AO DA HERO */}
+      <style jsx>{`
+        section {
+          background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.8) 100%);
+          position: relative;
+        }
+      `}</style>
     </section>
   )
 }

@@ -30,8 +30,8 @@ const Hero = () => {
               </p>
             </div>
 
-            {/* CTA Principal Responsivo */}
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 sm:mb-12 lg:mb-16 px-2 sm:px-0">
+            {/* CTA Principal Responsivo - BOTÕES COM MAIS ESPAÇAMENTO */}
+            <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 justify-center mb-8 sm:mb-12 lg:mb-16 px-2 sm:px-0">
               <a
                 href="https://wa.me/5511976877867?text=Olá%20Digital%20Hack!%20Gostaria%20de%20agendar%20uma%20consulta%20estratégica%20para%20meu%20negócio."
                 target="_blank"
@@ -48,48 +48,50 @@ const Hero = () => {
               </a>
             </div>
 
-            {/* Diferenciais Responsivos */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 px-2 sm:px-0">
-              <div className="premium-card p-4 sm:p-6">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg gradient-bg flex items-center justify-center mb-3 sm:mb-4 mx-auto sm:mx-0">
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+            {/* QUADRADOS COM LOGOS - ESPAÇAMENTO AUMENTADO */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-10 lg:gap-12 px-2 sm:px-0">
+              {/* Google Ads */}
+              <div className="premium-card p-5 sm:p-6">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center mb-4 sm:mb-5 mx-auto">
+                  <div className="text-white font-bold text-xl sm:text-2xl">G</div>
                 </div>
-                <h3 className="font-bold text-base sm:text-lg mb-1 sm:mb-2 text-center sm:text-left">Método Científico</h3>
-                <p className="text-slate-400 text-xs sm:text-sm text-center sm:text-left">Estratégias validadas através de testes controlados e análise de dados.</p>
+                <h3 className="font-bold text-base sm:text-lg mb-2 text-center">Google Ads</h3>
+                <p className="text-slate-400 text-xs sm:text-sm text-center">
+                  Tráfego qualificado para sua clínica
+                </p>
               </div>
 
-              <div className="premium-card p-4 sm:p-6">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg gradient-bg flex items-center justify-center mb-3 sm:mb-4 mx-auto sm:mx-0">
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+              {/* Instagram Ads */}
+              <div className="premium-card p-5 sm:p-6">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center mb-4 sm:mb-5 mx-auto">
+                  <svg className="w-6 h-6 sm:w-7 sm:h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                   </svg>
                 </div>
-                <h3 className="font-bold text-base sm:text-lg mb-1 sm:mb-2 text-center sm:text-left">Resultados Mensuráveis</h3>
-                <p className="text-slate-400 text-xs sm:text-sm text-center sm:text-left">KPIs claros e relatórios detalhados de performance.</p>
+                <h3 className="font-bold text-base sm:text-lg mb-2 text-center">Instagram Ads</h3>
+                <p className="text-slate-400 text-xs sm:text-sm text-center">
+                  Autoridade e engajamento social
+                </p>
               </div>
 
-              <div className="premium-card p-4 sm:p-6">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg gradient-bg flex items-center justify-center mb-3 sm:mb-4 mx-auto sm:mx-0">
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              {/* TikTok Ads - COM ÍCONE CORRETO */}
+              <div className="premium-card p-5 sm:p-6">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-gradient-to-br from-gray-900 to-gray-700 flex items-center justify-center mb-4 sm:mb-5 mx-auto">
+                  <svg className="w-6 h-6 sm:w-7 sm:h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z"/>
                   </svg>
                 </div>
-                <h3 className="font-bold text-base sm:text-lg mb-1 sm:mb-2 text-center sm:text-left">Execução Especializada</h3>
-                <p className="text-slate-400 text-xs sm:text-sm text-center sm:text-left">Equipe de especialistas focada em performance e conversão.</p>
+                <h3 className="font-bold text-base sm:text-lg mb-2 text-center">TikTok Ads</h3>
+                <p className="text-slate-400 text-xs sm:text-sm text-center">
+                  Público jovem e viralização
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Scroll Indicator Responsivo */}
-      <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hidden sm:block">
-        <div className="w-5 h-8 sm:w-6 sm:h-10 border border-slate-600 sm:border-2 border-blue-600 rounded-full flex justify-center">
-          <div className="w-1 h-2 sm:w-1 sm:h-3 bg-blue-600 rounded-full mt-2"></div>
-        </div>
-      </div>
+    
 
       {/* Estilos inline para a imagem de fundo */}
       <style jsx>{`
